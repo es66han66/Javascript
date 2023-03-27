@@ -26,3 +26,15 @@ for(let i = 0;i<=10000000; i++){
     )
 }
 console.timeEnd("second")
+
+console.time("third")
+for(let i = 0;i<=10000000; i++){
+    a({
+        name: "eshan"
+    },
+    {
+        name: "eshan"
+    }
+    )
+}
+console.timeEnd("third")
