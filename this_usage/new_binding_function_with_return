@@ -1,0 +1,17 @@
+function myFunction(){
+    // JS internally creates an object and refers it as this
+    
+    // User explicitly adds required properties and methods to the object
+    this.someKey = 1;
+    this.inner = function(){
+      console.log(this);
+    }
+    
+    return {
+        keys: 1
+    }
+  }
+  
+  const obj = new myFunction();
+//   obj.inner()           // gives error
+  console.log(obj)
